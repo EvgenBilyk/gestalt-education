@@ -46,19 +46,7 @@ class AccordionOpen {
                         </div>
                     </div>
                     <div class="hide" id=${elem.contentID}></div>
-                </div>`
-                // contentBlock += `
-                //     <div class="col flex-item">
-                //         <h5 class="card-title text-center text-success text-uppercase fs-6 fw-bold">${elem.tema}</h5>
-                //         <p class="card-text text-start fw-light fst-italic">${elem.tema_discription}</p>                
-                //         <div class="d-flex justify-content-between align-items-center">
-                //             <span class="badge bg-info text-dark">${elem.category}</span>
-                //             <div class="btn-group">
-                //                 <button type="button" id="${elem.contentID}_btn"  class="btn btn-sm btn-outline-success">show</button>
-                //             </div>                  
-                //         </div>
-                //         <div class="hide" id=${elem.contentID}></div>
-                //     </div>`
+                </div>`;
             }
         })
 

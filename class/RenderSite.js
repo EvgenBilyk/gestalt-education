@@ -47,11 +47,15 @@ class RenderSite {
         let blokOut = "";
         category.map(elem => {
             switch (elem.type) {
-                case "accardionClose":
-                case "accardionOpen":
+                case "accordionClose":
+                    blokOut += `<div class="row row-cols-1 row-cols-md-3 g-4 outBlock hide" id="outBlock_${elem.category}">${elem.category}</div>`;
+                    break;
+                case "accordionOpen":
                     blokOut += `<div class="row row-cols-1 row-cols-md-3 g-4 outBlock hide" id="outBlock_${elem.category}">${elem.category}</div>`;
                     break;
                 case "accordionFullOpen":
+                    blokOut += `<div class="row row-cols-1 g-4 outBlock hide" id="outBlock_${elem.category}">${elem.category}</div>`;
+                    break;
                 case "accordionFullClose":
                     blokOut += `<div class="row row-cols-1 g-4 outBlock hide" id="outBlock_${elem.category}">${elem.category}</div>`;
                     break;
@@ -60,7 +64,7 @@ class RenderSite {
 
         let content = `
                     <main>
-                        <div class="album py-5 bg-${this.styleSite.bgColorBody}  mt-4">
+                        <div class="album py-5 bg-${this.styleSite.bgColorBody} mt-4">
                             <div class="container">${blokOut}</div>
                         </div>
                     </main>`;
@@ -83,17 +87,14 @@ class RenderSite {
         `;
         document.querySelector("body").innerHTML = navBar + content + footer;
 
-        // let blockContent = new BlockContent(this.content, category, this.styleSite);
-        // blockContent.con();
-
         category.map(elem => {
             let contentList
             switch (elem.type) {
-                case "accardionClose":
+                case "accordionClose":
                     contentList = new AccordionClose(this.content, elem.category, this.styleSite);
                     contentList.render();
                     break;
-                case "accardionOpen":
+                case "accordionOpen":
                     contentList = new AccordionOpen(this.content, elem.category, this.styleSite);
                     contentList.render();
                     break;

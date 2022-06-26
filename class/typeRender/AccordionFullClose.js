@@ -28,7 +28,7 @@ class AccordionFullClose {
                 contentBlock += `
                     <div class="col flex-item">
                         <div class=" p-2">
-                            <h5 class="card-title text-start merriweather text-dark fs-6 fw-bold">${elem.tema}</h5>
+                            <h5 class="card-title text-start merriweather text-dark fs-5 fw-bold"><u>${elem.tema}</u></h5>
                             <p class="card-text text-start fw-light merriweather fst-italic text-secondary">${elem.tema_discription}</p>  
                         </div>              
                         <div class="" id=${elem.contentID}></div>
@@ -159,7 +159,7 @@ class AccordionFullClose {
                 }
             })
             content[item[0]] = `<div class="accordion mt-1 mb-2" id="${item[0]}">${itemAccordion}</div>`;
-        })
+        });
 
         let showAccardion = this.block.filter(elem => {
             if (content[elem.contentID] !== undefined && elem.show !== 0) {
@@ -167,10 +167,10 @@ class AccordionFullClose {
             }
         });
 
+
         /**
          * insert accordion in block and create event for btn "show"
          */
-
         showAccardion.map(elem => {
             for (let key in content) {
                 if (elem.contentID == key) {

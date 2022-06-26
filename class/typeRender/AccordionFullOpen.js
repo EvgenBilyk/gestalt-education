@@ -28,7 +28,7 @@ class AccordionFullOpen {
                 contentBlock += `
                     <div class="col flex-item">
                         <div class=" p-2">
-                            <h5 class="card-title text-start merriweather text-dark text-uppercase fs-6 fw-bold">${elem.tema}</h5>
+                            <h5 class="card-title text-start merriweather text-dark fs-5 fw-bold"><u>${elem.tema}</u></h5>
                             <p class="card-text text-start fw-light merriweather fst-italic text-secondary">${elem.tema_discription}</p>  
                         </div>              
                         <div class="" id=${elem.contentID}></div>
@@ -37,8 +37,6 @@ class AccordionFullOpen {
         })
 
         document.querySelector(`#outBlock_${this.category}`).innerHTML = contentBlock;
-
-
 
         /**
          * create accordion for block
@@ -183,6 +181,22 @@ class AccordionFullOpen {
                             document.querySelector(idBlock).classList.toggle('hide');
                         }
                     }
+                }
+            }
+        });
+
+
+
+        /**
+         * insert accordion in block and create event for btn "show"
+         */
+
+
+        showAccardion.map(elem => {
+            for (let key in content) {
+                if (elem.contentID == key) {
+                    let idBlock = `#${elem.contentID} `;
+                    document.querySelector(idBlock).innerHTML = content[key];
                 }
             }
         });

@@ -9,13 +9,13 @@ let nameSite = "Gestalt";
 let recordSite = "gestalt education";
 let styleSite = {
     bgColorNavBar: "dark",
-    colorButtonNavBar: "yellow",
-    bgColorButtonNavBar: "danger",
-    colorNameSite: "danger",
-    colorFooterRecord: "danger",
-    colorButtonFooter: "light",
+    colorButtonNavBar: "dark",
+    bgColorButtonNavBar: "light",
+    colorNameSite: "light",
+    colorFooterRecord: "light",
+    colorButtonFooter: "dark",
     bgColorFooter: "dark",
-    bgColorButtonFooter: "danger",
+    bgColorButtonFooter: "light",
     bgColorBody: "",
 };
 

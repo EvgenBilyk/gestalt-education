@@ -53,7 +53,6 @@ class AccordionClose {
         document.querySelector(`#outBlock_${this.category}`).innerHTML = contentBlock;
 
 
-
         /**
          * create accordion for block
          */
