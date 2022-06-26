@@ -28,8 +28,8 @@ class AccordionFullOpen {
                 contentBlock += `
                     <div class="col flex-item">
                         <div class=" p-2">
-                            <h5 class="card-title text-start cormorant-garamond text-dark text-uppercase fs-6 fw-bold">${elem.tema}</h5>
-                            <p class="card-text text-start fw-light cormorant-garamond fst-italic text-secondary">${elem.tema_discription}</p>  
+                            <h5 class="card-title text-start merriweather text-dark text-uppercase fs-6 fw-bold">${elem.tema}</h5>
+                            <p class="card-text text-start fw-light merriweather fst-italic text-secondary">${elem.tema_discription}</p>  
                         </div>              
                         <div class="" id=${elem.contentID}></div>
                     </div>`;
@@ -184,17 +184,6 @@ class AccordionFullOpen {
                         }
                     }
                 }
-            }
-        });
-
-        /**
-         * btn event for accordion list
-         */
-
-        showAccardion.map(elem => {
-            if (elem.category === this.category && +elem.showImg) {
-                let idImg = `#${elem.category + "__" + elem.order}`;
-                document.querySelector(idImg).classList.remove('hide');
             }
         });
     }
