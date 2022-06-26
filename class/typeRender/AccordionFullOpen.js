@@ -72,7 +72,7 @@ class AccordionFullOpen {
                     case "text": itemAccordion += `
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="heading${elem.contentID + index}">
-                        <button class="accordion-button collapsed yanone" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button collapsed merriweather" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse${elem.contentID + index}" aria-expanded="true" aria-controls="collapse${elem.contentID + index}">
                             ${elem.key}
                         </button>
@@ -90,7 +90,7 @@ class AccordionFullOpen {
                     case "img": itemAccordion += `
                     <div class="accordion-item">
                     <h2 class="accordion-header" id="heading${elem.contentID + index}">
-                        <button class="accordion-button collapsed yanone" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button collapsed merriweather" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse${elem.contentID + index}" aria-expanded="true"
                             aria-controls="collapse${elem.contentID + index}">
                             ${elem.key}
@@ -109,7 +109,7 @@ class AccordionFullOpen {
                     case "link": itemAccordion += `
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="heading${elem.contentID + index}">
-                        <button class="accordion-button collapsed yanone" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button collapsed merriweather" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse${elem.contentID + index}" aria-expanded="true" 
                             aria-controls="collapse${elem.contentID + index}">
                             ${elem.key}
@@ -142,7 +142,7 @@ class AccordionFullOpen {
                         itemAccordion += `
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="heading${elem.contentID + index}">
-                            <button class="accordion-button collapsed yanone" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed merriweather" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapse${elem.contentID + index}" aria-expanded="true" aria-controls="collapse${elem.contentID + index}">
                                 ${elem.key}
                             </button>
