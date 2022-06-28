@@ -40,7 +40,7 @@ class AccordionClose {
                     <div class="d-flex justify-content-between align-items-center">
                         <span class="badge bg-info text-dark">${elem.category}</span>
                         <div class="btn-group">
-                            <button type="button" id="${elem.contentID}_btn"  class="btn btn-sm btn-outline-dark">show</button>
+                            <button type="button" id="${elem.contentID}_btn"  class="btn btn-sm btn-outline-dark">розгорнути</button>
                         </div>                  
                     </div>
                 </div>

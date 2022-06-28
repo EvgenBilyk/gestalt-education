@@ -30,8 +30,14 @@ class AccordionFullOpen {
                         <div class=" p-2">
                             <h5 class="card-title text-start merriweather text-dark fs-5 fw-bold"><u>${elem.tema}</u></h5>
                             <p class="card-text text-start fw-light merriweather fst-italic text-secondary">${elem.tema_discription}</p>  
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-info text-dark">${elem.category}</span>
+                            <div class="btn-group">
+                                <button type="button" id="${elem.contentID}_btn"  class="btn btn-sm btn-outline-dark">розгорнути</button>
+                            </div>                  
                         </div>              
-                        <div class="" id=${elem.contentID}></div>
+                        <div class="hide" id=${elem.contentID}></div>
                     </div>`;
             }
         })
